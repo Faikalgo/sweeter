@@ -21,6 +21,7 @@ TOKEN_KEY = 'mytoken'
 MONGODB_URI = os.environ.get("MONGODB_URI")
 DB_NAME =  os.environ.get("DB_NAME")
 client = MongoClient(MONGODB_URI)
+db = client.dbsparta_plus_week4
 
 @app.route('/', methods=['GET'])
 def home():
